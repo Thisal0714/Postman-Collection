@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_postman_id": "76bde63e-f525-4a78-87cb-c7d3570cc1d7",
+    "name": "Placement APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Sign Up",
+          "id": "e6c18635-ec6e-4380-8ecd-51b8ae3d28b3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"first_name\": \"Thisal\",\r\n  \"last_name\": \"Dev\",\r\n  \"email\": \"thisaldev@gmail.com\",\r\n  \"password\": \"Thisal123\",\r\n  \"role_id\": \"fe871483-2c10-45af-b809-69770d428ee1\"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/register",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Sign In",
+          "id": "43f878a0-7c24-4896-95dc-86082fca727e",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"thisaldev@gmail.com\",\r\n  \"password\": \"Thisal123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/login",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "5c574775-a4e2-4f80-969c-da54b7f3f9c3"
+    },
+    {
+      "name": "Role",
+      "item": [
+        {
+          "name": "Create Role",
+          "id": "098b287f-3912-4ef3-b6d8-371d958425c2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"role_name\":\"ADMIN\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/roles",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "roles"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Roles",
+          "id": "81848f0e-3107-4124-b1a9-a6710a4161ca",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"role_name\":\"ADMIN\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/roles",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "roles"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "d0857dfd-4e92-4958-81bf-cd16a5136b6d"
+    }
+  ]
+}

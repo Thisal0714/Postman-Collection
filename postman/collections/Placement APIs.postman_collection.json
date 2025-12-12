@@ -16,7 +16,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"first_name\": \"Thisal\",\r\n  \"last_name\": \"Dev\",\r\n  \"email\": \"thisaldev@gmail.com\",\r\n  \"password\": \"Thisal123\",\r\n  \"role_id\": \"fe871483-2c10-45af-b809-69770d428ee1\"\r\n\r\n}",
+              "raw": "{\r\n  \"first_name\": \"Thisal\",\r\n  \"last_name\": \"Dev\",\r\n  \"email\": \"thisaldev@gmail.com\",\r\n  \"password\": \"Thisal123\",\r\n  \"role_id\": \"8bde8262-b154-414a-8f52-ef99cafb4780\"\r\n\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -107,15 +107,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"role_name\":\"ADMIN\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "{{Base_URL}}/api/roles",
               "host": [
@@ -183,7 +174,133 @@
     },
     {
       "name": "Products",
-      "item": [],
+      "item": [
+        {
+          "name": "Product Create",
+          "id": "f3e86f4b-cebe-41b8-93f3-b5a64e51a02b",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\" : \"Test Product\",\r\n    \"description\" : \"Description\",\r\n    \"price\" : \"150\",\r\n    \"image_url\" : \"https://helloworld.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/products",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List View",
+          "id": "4c1a4c1b-f9bf-48dd-bbef-02ca8851b30b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Base_URL}}/api/products",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Single View",
+          "id": "87926281-6739-453e-8b98-d5e39f2bc6f8",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Base_URL}}/api/products/836e151e-1cb6-4b03-93ae-7e86e648d6ac",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "products",
+                "836e151e-1cb6-4b03-93ae-7e86e648d6ac"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "cca42c13-5878-4293-9c7b-7f9d2c453306",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\" : \"Test Product\",\r\n    \"description\" : \"Description\",\r\n    \"price\" : \"150\",\r\n    \"image_url\" : \"https://helloworld.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/products/836e151e-1cb6-4b03-93ae-7e86e648d6ac",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "products",
+                "836e151e-1cb6-4b03-93ae-7e86e648d6ac"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "id": "1e24093f-4a7c-4c66-98b7-fe7a1787dbed",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\" : \"Test Product\",\r\n    \"description\" : \"Description\",\r\n    \"price\" : \"150\",\r\n    \"image_url\" : \"https://helloworld.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/products/cdf374c3-5f6e-4d0b-b0f2-1738aa9042f0",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "products",
+                "cdf374c3-5f6e-4d0b-b0f2-1738aa9042f0"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
       "id": "458154c5-d583-44cb-9a96-25913e55932c"
     }
   ]

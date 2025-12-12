@@ -128,9 +128,63 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Delete Role",
+          "id": "d0583ed1-80dd-4fd1-9b35-f9e93a10851d",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{Base_URL}}/api/roles/ca524a27-c99f-4200-b158-57541b5c5938",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "roles",
+                "ca524a27-c99f-4200-b158-57541b5c5938"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Role",
+          "id": "9fe01c7c-30d4-4cec-9893-bddbb111bba1",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"role_name\":\"Update\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Base_URL}}/api/roles/e7c028a0-8bf6-4fe1-9096-b420584a01e7",
+              "host": [
+                "{{Base_URL}}"
+              ],
+              "path": [
+                "api",
+                "roles",
+                "e7c028a0-8bf6-4fe1-9096-b420584a01e7"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "d0857dfd-4e92-4958-81bf-cd16a5136b6d"
+    },
+    {
+      "name": "Products",
+      "item": [],
+      "id": "458154c5-d583-44cb-9a96-25913e55932c"
     }
   ]
 }
